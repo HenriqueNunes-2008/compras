@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro de Fornecedor</h2>
+        <p class="subtitle">Insira as informações abaixo para atualizar a base de dados.</p>
+        
+        <form id="cadastroForm">
+            <div class="input-group">
+                <label for="fornecedor">Fornecedor</label>
+                <input type="text" id="fornecedor" required placeholder="Nome da empresa">
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="contato">Nome do Contato</label>
+                    <input type="text" id="contato" required placeholder="Ex: João Silva">
+                </div>
+                <div class="input-group">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" id="cargo" required placeholder="Ex: Gerente Comercial">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required placeholder="contato@empresa.com">
+                </div>
+                <div class="input-group">
+                    <label for="telefone">Telefone/Celular</label>
+                    <input type="tel" id="telefone" required placeholder="(11) 99999-9999">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="site">Site</label>
+                <input type="url" id="site" placeholder="https://www.empresa.com.br">
+            </div>
+
+            <div class="input-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" required placeholder="Rua, Número, Bairro, Cidade - UF">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" id="btnSalvar" class="btn-primary">Salvar Fornecedor</button>
+                <a href="https://docs.google.com/spreadsheets/d/1-1eGPOLK5OCqVgLFZgeLWYGIRqJUCUTLrvEMHYGAuoM/edit?gid=0#gid=0" target="_blank" class="btn-secondary">Visualizar Planilha</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

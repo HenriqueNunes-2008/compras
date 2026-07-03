@@ -1,0 +1,136 @@
+/* Importação de fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1A345B; /* Fundo institucional escuro */
+    background: linear-gradient(135deg, #1A345B 0%, #145392 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: #3C1276; /* Roxo Primário */
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: #657788;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    color: #002960;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #657788;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CBDE0; /* Ciano Primário para foco */
+    box-shadow: 0 0 0 3px rgba(76, 189, 224, 0.2);
+}
+
+/* Grupo de botões empilhados/responsivos */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+button, .btn-secondary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #3C1276; /* Roxo */
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #2E84B6; /* Transição suave para azul no hover */
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #145392;
+    border: 2px solid #145392;
+}
+
+.btn-secondary:hover {
+    background-color: #145392;
+    color: #FFFFFF;
+}
+
+/* Responsividade para telas menores (Celulares) */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+    .container {
+        padding: 24px;
+    }
+}
